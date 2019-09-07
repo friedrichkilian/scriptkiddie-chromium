@@ -103,7 +103,7 @@ function storeScript(callback) {
 
         buttonFromID(formID.value).innerHTML = formName.value === '' ? 'Unnamed Script' : formName.value;
         formName.value = formName.value === '' ? 'Unnamed Script' : formName.value;
-        formRegex.value = formRegex.value === '' ? '.*' : formRegex.value
+        formRegex.value = formRegex.value === '' ? '.*' : formRegex.value;
 
         if(callback)
             callback();
