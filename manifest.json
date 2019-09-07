@@ -1,0 +1,28 @@
+{
+
+    "manifest_version": 2,
+
+    "name": "ScriptKiddie",
+    "description": "This easy-to-use & self-explaining extension allows you to run custom scripts on any website. These scripts can do anything - editing a website, playing a game or debugging your code is just one click away.",
+
+    "icons": {
+
+        "16": "icons/icon_16.png",
+        "48": "icons/icon_48.png",
+        "128": "icons/icon_128.png"
+
+    },
+    "version": "2.0",
+    "author": "Kilian Friedrich",
+    "homepage_url": "https://www.kilianfriedrich.de/",
+
+    "permissions": ["storage", "tabs", "activeTab" ],
+
+    "browser_action": { "default_popup": "popup.html" },
+    "options_page": "options.html",
+    "background": {
+        "scripts": [ "js/background.js" ],
+        "persistent": false
+    }
+
+}
