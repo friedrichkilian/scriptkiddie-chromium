@@ -127,3 +127,23 @@ document.getElementById('addscript').onclick =  function() {
 }; // END document.getElementById('addscript').onclick =  function() {
 
 loadScripts();
+
+document.addEventListener('keydown', function(e) {
+
+    if((window.navigator.platform.match('Mac') ? e.metaKey : e.ctrlKey) && e.key === 's') {
+
+        e.preventDefault();
+
+        storeScript();
+
+        saveButton.classList.add('activated');
+        setTimeout(function() {
+
+            saveButton.blur();
+            saveButton.classList.remove('activated');
+
+        }, 500) // END setTimeout(function() {
+
+    } // END if((window.navigator.platform.match('Mac') ? e.metaKey : e.ctrlKey) && e.key === 's') {
+
+}, false); // END document.addEventListener('keydown', function(e) {
